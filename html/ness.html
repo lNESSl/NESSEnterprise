@@ -5,9 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NESS-Enterprise</title>
-    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../css/ness.css">
 </head>
 <body>
+<header id="header">
+    <a href="#" class="logo">Logo</a>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</header>
+<section class="banner" id="home">
+    <h2>We Make<br><span>Brands</span> Matter</h2>
+</section>
 
+<section class="sec" id="about">
+    <div class="content">
+        <div class="mxw800p">
+            <h3>Quienes Somos</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, vero. Similique iusto facere debitis eos labore! Non voluptas culpa at ea voluptate eligendi explicabo et expedita, facere tempore repellendus error.</p>
+            <a href="#" class="btn">Read Our Story</a>
+        </div>
+    </div>
+</section>
+
+<section class="sec about" id="services">
+    <div class="content">
+        <div class="mxw800p">
+            <h3>Que Hacemos</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, vero. Similique iusto facere debitis eos labore! Non voluptas culpa at ea voluptate eligendi explicabo et expedita.</p>
+        </div>
+        <div class="services">
+            <div class="box">
+                <div class="iconBx">
+                    <img src="../img/ness/icon1.png">
+                </div>
+                <div class="content">
+                    <h2>Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="iconBx">
+                    <img src="../img/ness/icon2.png">
+                </div>
+                <div class="content">
+                    <h2>Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="iconBx">
+                    <img src="../img/ness/icon3.png">
+                </div>
+                <div class="content">
+                    <h2>Branding</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script type="text/javascript">
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+    })
+</script>
 </body>
 </html>
