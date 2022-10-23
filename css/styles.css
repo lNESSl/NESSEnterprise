@@ -273,13 +273,13 @@ header ul li a{
     margin: 0 auto;
 }
 
-h3{
+.nombre{
     font-size: 40px;
     font-weight: 200;
     margin-bottom: 10px;
 }
 
-p{
+.lema{
     position: relative;
     font-size: 18px;
     font-weight: 300;
