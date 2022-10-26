@@ -465,6 +465,11 @@ header ul li a{
     font-weight: 300;
 }
 
+.teamBx .member .details .linkig a{
+    text-decoration: none;
+    color: #fff;
+}
+
 .contact{
     background: #000;
 }
