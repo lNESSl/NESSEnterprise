@@ -607,15 +607,15 @@ header ul li a{
         background: #000;
         z-index: 1;
         transition: 0.5s;
-    
+
 }
-header,
-header.sticky{
+#header,
+#header.sticky{
     padding: 5px 50px;
     background: #fff;
 }
 
-header ul{
+#header ul{
     position: absolute;
     top: 50px;
     left: 0;
@@ -627,19 +627,19 @@ header ul{
     visibility: hidden;
     opacity: 0;
 }
-header.active ul{
+#header.active ul{
     visibility: visible;
     opacity: 1;
     display: block;
     padding-top: 20px;
 }
-header.active ul li a{
+#header.active ul li a{
     display: inline-block;
     margin: 10px 0;
     font-size: 20px;
 }
-header .logo,
-header ul li a{
+#header .logo,
+#header ul li a{
     color: #000;
 }
 .banner{
@@ -675,4 +675,36 @@ header ul li a{
 h3{
     font-size: 36px;
 }
+}
+
+@media (max-width: 470px){
+
+.banner h2 {
+    font-size: 40px;
+}
+.services{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
+
+.services .box{
+    width: 200px;
+
+}
+
+.workBx .brand{
+    min-height: 275px;
+    width: 200px;
+}
+
+.teamBx .member{
+    min-height: 275px;
+    width: 200px;
+}
+}
+@media (max-width: 360px) {
+    .statsBox {
+        justify-content: center;
+        margin-left: 20px;
+    }
 }
